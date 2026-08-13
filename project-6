@@ -1,0 +1,14 @@
+# TO CALL THE PERSON WITH HIS GOOD NAME
+name=input("enter your name brother/sister::- " )
+name_parts=name.split()
+good_name=name_parts[0].upper()
+# To call the person with his good name through text to speech module
+import time
+import pyttsx3
+v=pyttsx3.init()
+v.say(f"hello {good_name},How are you doing today")
+v.runAndWait()
+#time.sleep(0.5)
+print("hello",good_name,"How are you doing today")
+o=input("Press enter if you are doing good")
+
