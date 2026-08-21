@@ -14,4 +14,13 @@ for i in range(3):
     h.append("mango")
 print(h)
 
-
+#slicing in the lists
+e=[1,2,3,4,5,5,6]
+print(e[0:3])
+#print maximum or minimum in the lists
+print(max(e))
+print(min(e))
+#to add two lists by adding also thier respective elements
+f=[1,3,4,5,5,6]
+solve=list(a+b for a,b in zip(e,f))
+print(solve)
