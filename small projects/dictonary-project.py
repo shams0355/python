@@ -14,4 +14,4 @@ for n,c,m in zip(names,classes,marks):
     print(f"Marks of {n} in {c.upper()} are {m} ")    
 print(zip(names,classes,marks))
 P=input("PRESS THE ENTER BUTTON IF IT IS CORRECT")
-print("\033[1mTHANKS FOR USING OUR WEBSITE")
+print("\033[1mTHANKS FOR USING OUR WEBSITE") 
