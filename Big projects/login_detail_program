@@ -1,0 +1,38 @@
+login_accounts_info={}
+t=" "
+l=" "
+print("                  \033[1mWELCOME TO DARAZ.PK \033[0m")
+while True:
+ ask=input("TELL US IF YOU ALREADY  HAVE AN ACCOUNT OR NOT (Y/N) ::- ").lower()
+ if ask=="y": 
+    print(login_accounts_info)
+    gmail=input("ENTER YOUR GMAIL ACCOUNT::- ")
+    password=(input("ENTER YOUR PASSWORD ::- "))
+    if (gmail in login_accounts_info) and (password==login_accounts_info[gmail]):
+        print("\033[1mWELCOME TO YOUR ACCOUNT IN DARAZ.PK \033[0m")
+        break
+ elif ask=="n"   :
+    name=input("ENTER YOUR NAME::- ")
+    while True:
+     gmaile=input("ENTER YOUR GMAIL ACCOUNT::- ")
+     if gmaile.endswith("@gmail.com"):
+        break
+     else:
+        print("ENTER A VALID GMAIL ACCOUNT")
+    t=gmaile
+    while True:
+            passworde= input("SET UP YOUR PASSWORD ,IT MUST CONTAIN MIXTURE OF DIFFERENT TYPES OF DIGITS::- ")
+
+            if (len(passworde) >= 8 and
+                any(ch.islower() for ch in passworde) and
+                any(ch.isupper() for ch in passworde) and
+                any(ch.isdigit() for ch in passworde) and
+                any(ch in "!@#$%^&*()-_=+[]{};:,.<>?/\\|" for ch in passworde)):
+                break
+            else:
+                print("⚠️ Simple password detected! Please enter a STRONG password.") 
+    l=passworde
+    login_accounts_info.update({t:l})
+    print(f"MR/MS {name.upper()} YOUR ACCOUNT CREATED SUCCESSFULLY ,NOW LOGIN TO YOUR ACCOUNT ")
+ else:
+   print("ABY SALAY JO KAHA GAYA HAI WO KAR ,\"Y\" YA \"N\" ,LIKH ")    
