@@ -1,0 +1,2 @@
+here are the words that you should use to detect any email or message as a spam or malicious content:
+"hii","ap ky bank ma ","please"
